@@ -1,0 +1,64 @@
+<div class="w-full h-[100vh] flex justify-center items-center bg-slate-800 opacity-85">
+    <div class="w-[30rem] flex flex-col bg-gray-400 rounded-md px-10 py-7">
+        <div class="flex justify-between items-center pb-7">
+            <h2 class="text-slate-50 text-2xl">Nova Transação</h2>
+
+            <button class="hover:bg-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <line x1="200" y1="56" x2="56" y2="200" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                    <line x1="200" y1="200" x2="56" y2="56" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col gap-3">
+            <input class="h-10 rounded-md p-4" type="text" placeholder="Descrição">
+            <input class="h-10 rounded-md p-4" type="number" placeholder="Valor">
+            <input class="h-10 rounded-md p-4" type="text" placeholder="Categoria">
+        </div>
+
+        <div class="flex justify-between mt-3">
+            <button
+                class="flex gap-2 items-center justify-center h-10 bg-indigo-400 hover:bg-indigo-500 rounded-md w-[48%]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10"
+                        stroke-width="16"></circle>
+                    <polyline points="94.1 121.9 128 88 161.9 121.9" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                    <line x1="128" y1="168" x2="128" y2="88" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                </svg>
+                Entrada
+            </button>
+
+            <button
+                class="flex gap-2 items-center justify-center h-10 bg-indigo-400 hover:bg-indigo-500 rounded-md w-[48%]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10"
+                        stroke-width="16"></circle>
+                    <polyline points="94.1 134.1 128 168 161.9 134.1" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                    <line x1="128" y1="88" x2="128" y2="168" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></line>
+                </svg>
+                Saida
+            </button>
+        </div>
+
+        <div>
+            <button
+                class="w-full bg-slate-900 hover:bg-slate-950 transition duration-75 text-white font-bold py-2 px-4 rounded mt-7">
+                Cadastrar
+            </button>
+        </div>
+    </div>
+
+</div>
