@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output, } from '@angular/core';
 
 @Component({
   selector: 'app-modal-new-transaction',
@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './modal-new-transaction.component.css'
 })
 export class ModalNewTransactionComponent {
+  @Input() isOpen: boolean = false; // Adicionando um valor padrão
+  @Output() closeModal: EventEmitter<void> = new EventEmitter();
+
+  constructor() { }
+
+  close() {
+    this.closeModal.emit();
+  }
 
 }

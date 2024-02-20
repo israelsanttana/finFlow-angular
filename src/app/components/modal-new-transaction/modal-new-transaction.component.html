@@ -1,9 +1,11 @@
-<div class="w-full h-[100vh] flex justify-center items-center bg-slate-800 opacity-85">
-    <div class="w-[30rem] flex flex-col bg-gray-400 rounded-md px-10 py-7">
+<div class="modal w-[100vw] h-[100vh]  fixed top-0 left-0 right-0" [class.show-modal]="isOpen">
+    <div class="w-[100vw] h-[100vh] bg-slate-800 opacity-85"></div>
+    <div
+        class="w-[30rem] flex flex-col bg-gray-400 rounded-md px-10 py-7 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div class="flex justify-between items-center pb-7">
             <h2 class="text-slate-50 text-2xl">Nova Transação</h2>
 
-            <button class="hover:bg-slate-500">
+            <button class="hover:bg-slate-500" (click)="close()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>

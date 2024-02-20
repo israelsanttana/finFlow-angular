@@ -1,0 +1,8 @@
+.modal {
+  display: none;
+
+}
+
+.show-modal {
+  display: block;
+}
